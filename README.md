@@ -42,3 +42,16 @@ make test
 ```
 
 ## Running Go documentation server
+
+`godoc` should be installed first:
+```
+go install golang.org/x/tools/cmd/godoc
+```
+
+Documentation server can run using the `makefile`:
+```bash
+make doc
+```
+
+Default documentation can be access from the URL:
+http://localhost:6060/pkg/github.com/lrwx00t/lxd_provider/lxd/
