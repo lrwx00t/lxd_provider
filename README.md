@@ -40,3 +40,5 @@ There is a couple of unit test cases provided in this project which can be used 
 ```bash
 make test
 ```
+
+## Running Go documentation server

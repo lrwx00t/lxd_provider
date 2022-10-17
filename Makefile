@@ -42,3 +42,7 @@ test-provider-apply:
 test-provider-destroy:
 	cd $(TF_TEST_DIR) && ls -A1 | grep terraform | xargs rm -rf
 	cd $(TF_TEST_DIR) && terraform init && terraform destroy --auto-approve
+
+doc:
+	echo "Lxd doco can be accessed here: http://localhost:6060/pkg/github.com/lrwx00t/lxd_provider/lxd/"
+	godoc -http=:6060
